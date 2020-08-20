@@ -1,0 +1,425 @@
+/* ここから下に記載していく */
+body{
+    border: turquoise; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+   
+.header{
+    height: 120px;
+    display:flex;
+}
+
+.rogo{
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: center center;
+    text-align: left center;
+}
+
+.navi{
+    display: flex;
+    margin-left:  240px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header-text{
+    display: flex;
+    scroll-padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+.FV{
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+}
+
+.FV-image{
+    background: cover;
+    background-position: center center;
+    width:1200px;
+}
+
+.FV-text1{
+    background-size: cover;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+#title01{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-justify: 24px;
+    color: orange;
+    font-weight: bold;
+}
+
+#title02{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-justify: 24px;
+    color: orange;
+    font-weight: bold;
+}
+
+#title03{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-justify: 24px;
+    color: orange;
+    font-weight: bold;
+}
+
+
+
+.ABOUT{
+text-align: center;
+}
+
+.COURSE{
+    text-align: center;
+    padding-bottom: 60px;
+    line-height: 30px;
+
+}
+
+.ABOUT-SPACE{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.title-ABOUT{
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.title-COURSE{
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.title-NEWS{
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.title-CONTACT{
+    font-size: 18px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.imagegun{
+    display: flex;
+    padding-top: 80px;
+    max-width: 1200px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+.image04{
+    width:250px;
+    height: auto;
+    padding-left: 0px;
+    text-align: center;
+}
+.image03{
+    width:350px;
+    height:auto;
+    margin-left:0;
+    margin-right: 0;
+}
+.image02{
+    width:350px;
+    height:auto;
+    margin-left:0;
+    margin-right: 0;
+}
+.image01{
+    width:250px;
+    height: auto;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.detail-title{
+    padding-top: 120px;
+    font-size: 24px;
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+.detail-textbox01{
+    padding-left: 50px;
+    text-align: left;
+    line-height: 30px;
+    width:480px;
+}
+
+.detail-textbox02{
+    padding-left: 70px;
+    padding-right: 50px;
+    text-align: left;
+    line-height: 30px;
+    width:480px;
+    justify-content: center;
+}
+
+.detail-textbox03{
+    padding-left: 50px;
+    text-align: left;
+    line-height: 30px;
+    width:480px;
+}
+
+.detail01{
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail01-image{
+    max-width: 600px;
+    height: auto;
+ }
+ 
+
+.detail02{
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0px;
+}
+
+.detail02-image{
+    max-width: 600px;
+    height: auto;
+    padding-right:0px;
+ } 
+
+.detail03{
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail03-image{
+   max-width: 600px;
+   height: auto;
+}
+
+.News{
+    display: flex;
+    text-align: center;
+    position: center;
+    justify-content: center;
+}
+
+.News01{
+    width: 300px;
+    max-height: 350px;
+    text-align: left;
+}
+
+.News01:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: all 0.6s ease 0s;
+}
+
+.News02{
+    width: 300px;
+    max-height: 350px;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.News02:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: all 0.6s ease 0s;
+}
+
+.News03{
+    width: 300px;
+    max-height: 350px;
+    text-align: left;
+}
+
+.News03:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: all 0.6s ease 0s;
+}
+
+.news-image01{
+    width: 300px;
+}
+
+
+
+.news-image02{
+    width: 300px;
+}
+
+
+.news-image03{
+    width: 300px;
+}
+
+
+.image-calender{
+    margin-top: 30px;
+}
+
+.image01-text{
+    word-wrap: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 24px;
+}
+
+.image02-text{
+    word-wrap: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 24px;
+}
+
+.image03-text{
+    word-wrap: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 24px;
+}
+
+.MORE{
+    margin-top: 60px;
+    text-align: center;
+    position: center;
+    justify-content: center;
+    text-align: center center;
+    background-color: orange;
+    width: 300px;
+    height: 60px;
+}
+
+.Access{
+    margin-top: 60px;
+    background-color: paleturquoise;
+}
+
+#target{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: auto;
+    height: 500px;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+#title04{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#title05{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.CONTACT-02{
+    padding-top: 30px;
+}
+
+.Access-detail{
+    display: flex;
+    line-height: 50px;
+    padding-bottom: 60px;
+}
+
+.Access-detail-left{
+    text-align: left;
+    padding-left: 400px; 
+    line-height: 50px;
+}
+
+.Access-detail-right{
+    text-align: left;
+    width: auto;
+    margin-left: 100px;
+    line-height: 50px;
+
+}
+
+.Form{
+    margin-top: 70px;
+    height: 600px;
+    width: auto;
+    background-color: greenyellow;
+    margin-top: 36px;    
+
+}
+
+
+label{
+    text-align: left;
+    width: auto;
+    line-height: 50px;
+}
+
+input{
+    text-align: left;
+    width: auto;
+    margin-left: 200px;
+    line-height: 50px;
+
+}
+
+
+.footer{
+    margin-top: 140px;
+    background-color: #707070;
+    height: auto;
+}
+.footer-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
