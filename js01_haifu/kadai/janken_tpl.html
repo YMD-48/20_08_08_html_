@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>じゃんけん</title>
+</head>
+<body>
+
+<header>
+  <h1>じゃんけん</h1>
+</header>
+
+<main>
+  <ul>
+    <li id="gu_btn">グー<div id="image03"><img id="YARI" src="YARI03.jpg" alt=""></div></li>
+    <li id="cho_btn">チョキ<div id="image02"><img id="TORA" src="TORA02.jpg" alt=""></div></li>
+    <li id="par_btn">パー<div id="image01"><img id="BBA" src="BBA01.jpg" alt=""></div></li>
+    
+  </ul>
+
+<div class="data">
+  <div>コンピュータの出した手は？「<span id="pc_hands"></span>」:「<span id="result"></span>」</div>
+  <div id="battle">勝負回数:<span id=kaisu></span></div>
+  <div id="judgment">勝ち数:<span id=kati></span></div>
+  <div>勝率:<span id="ritu"></span>%</div>
+</div>
+
+
+  
+</main>
+
+<footer></footer>
+<script>
+//じゃんけん用のSCRIPTを書いてください
+let battle = 0;
+let kati = 0;
+let ritu = 0;
+
+
+
+
+$("#gu_btn").on("click",function(){
+  const cho = 1;
+  const gu = 2;
+  const par = 3;
+
+  battle += 1;
+  
+  $("#kaisu").html(battle);
+  $("#result").empty();
+
+  const cp = Math.ceil(Math.random()*3);
+        if(cp<gu){
+            $("#pc_hands").html('チョキ');
+            $("#result").append('勝ち');
+            kati += 1;
+            ritu =  Math.ceil((kati/battle)*100);
+            $("#kati").html(kati);
+            $("#ritu").html(ritu);
+            $("#image03").empty();
+            $("#image02").empty();
+            $("#image01").empty();
+            $("#image03").html('<img src="kati.jpg">');
+            $("#image02").html('<img src="TORA02.jpg">');
+            $("#image01").html('<img src="BBA01.jpg">');
+
+            // $("#image03").css("opacity","0.2");
+            // $("#image03").css("z-index","5");
+            // $("#YARI").css("z-index","100");
+        }
+        if(cp>gu){
+            $("#pc_hands").html('パー');
+            $("#result").append('負け');
+            ritu =  Math.ceil((kati/battle)*100);
+            $("#ritu").html(ritu);
+            $("#image03").empty();
+            $("#image02").empty();
+            $("#image01").empty();
+            $("#image03").html('<img src="make.jpg">'); 
+            $("#image02").html('<img src="TORA02.jpg">');
+            $("#image01").html('<img src="BBA01.jpg">');
+        }
+        if(cp==gu){
+          $("#pc_hands").html('グー');
+          $("#result").append('引き分け');
+          ritu =  Math.ceil((kati/battle)*100);
+          $("#ritu").html(ritu);
+          $("#image03").empty();
+          $("#image02").empty();
+          $("#image01").empty();
+          $("#image03").html('<img src="YARI03.jpg">');
+          $("#image02").html('<img src="TORA02.jpg">');
+          $("#image01").html('<img src="BBA01.jpg">');
+        }
+})
+
+$("#cho_btn").on("click",function(){
+  const par = 1;
+  const cho = 2;
+  const gu = 3;
+
+  battle += 1;
+  
+  $("#kaisu").html(battle);
+  $("#result").empty();
+
+  const cp = Math.ceil(Math.random()*3);
+        if(cp<cho){
+            $("#pc_hands").html('パー');
+            $("#result").append('勝ち');
+            kati += 1;
+            ritu =  Math.ceil((kati/battle)*100);
+            $("#kati").html(kati);
+            $("#ritu").html(ritu);
+            $("#image03").empty();
+            $("#image02").empty();
+            $("#image01").empty();
+            $("#image03").html('<img src="YARI03.jpg">');
+            $("#image02").html('<img src="kati.jpg">');
+            $("#image01").html('<img src="BBA01.jpg">');
+        }
+        if(cp>cho){
+            $("#pc_hands").html('グー');
+            $("#result").append('負け');
+            ritu =  Math.ceil((kati/battle)*100);
+            $("#ritu").html(ritu);
+            $("#image03").empty();
+            $("#image02").empty();
+            $("#image01").empty();
+            $("#image03").html('<img src="YARI03.jpg">');
+            $("#image02").html('<img src="make.jpg">');
+            $("#image01").html('<img src="BBA01.jpg">');
+        }
+        if(cp==cho){
+          $("#pc_hands").html('チョキ');
+          $("#result").append('引き分け');
+          ritu =  Math.ceil((kati/battle)*100);
+          $("#ritu").html(ritu);
+          $("#image03").empty();
+          $("#image02").empty();
+          $("#image01").empty();
+          $("#image03").html('<img src="YARI03.jpg">');
+          $("#image02").html('<img src="TORA02.jpg">');
+          $("#image01").html('<img src="BBA01.jpg">');
+        }
+})
+
+$("#par_btn").on("click",function(){
+  const gu = 1;
+  const par = 2;
+  const cho = 3;
+
+  battle += 1;
+  
+  $("#kaisu").html(battle);
+  $("#result").empty();
+
+  const cp = Math.ceil(Math.random()*3);
+        if(cp<par){
+            $("#pc_hands").html('グー');
+            $("#result").append('勝ち');
+            kati += 1;
+            ritu =  Math.ceil((kati/battle)*100);
+            $("#kati").html(kati);
+            $("#ritu").html(ritu);
+            $("#image03").empty();
+            $("#image02").empty();
+            $("#image01").empty();
+            $("#image03").html('<img src="YARI03.jpg">');
+            $("#image02").html('<img src="TORA02.jpg">');
+            $("#image01").html('<img src="kati.jpg">');    
+        }
+        if(cp>par){
+            $("#pc_hands").html('チョキ');
+            $("#result").append('負け');
+            ritu =  Math.ceil((kati/battle)*100);
+            $("#ritu").html(ritu);
+            $("#image03").empty();
+            $("#image02").empty();
+            $("#image01").empty();
+            $("#image03").html('<img src="YARI03.jpg">');
+            $("#image02").html('<img src="TORA02.jpg">');
+            $("#image01").html('<img src="make.jpg">');  
+        }
+        if(cp==par){
+          $("#pc_hands").html('パー');
+          $("#result").append('引き分け');
+          ritu =  Math.ceil((kati/battle)*100);
+          $("#ritu").html(ritu);
+          $("#image03").empty();
+          $("#image02").empty();
+          $("#image01").empty();
+          $("#image03").html('<img src="YARI03.jpg">');
+          $("#image02").html('<img src="TORA02.jpg">');
+          $("#image01").html('<img src="BBA01.jpg">');
+        }
+ })   
+    
+    
+
+</script>
+
+
+</body>
+</html>
